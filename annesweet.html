@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Anne Sweet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral+SC:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <li class="menu-item"><a href="#articles">Статьи</a></li>
+            <li class="menu-item"><a href="#aboutme">Обо мне</a></li>
+            <li class="menu-item"><a href="#portfolio">Портфолио</a></li>
+            <li class="menu-item"><a href="#mailme">Написать мне</a></li>
+        </nav>
+        <img class="logo" src="img/logo.png">
+    </header>
+
+    <main>
+        <section class="articles">
+            <div class="articles-header">
+                <h1>Все статьи</h1>
+                <select class="filter">
+                    <option class="select-option" value="all" selected>Выбрать тему</option>
+                    <option class="select-option" value="travel">путешествия</option>
+                    <option class="select-option" value="city">город</option>
+                    <option class="select-option" value="books">книги</option>
+                    <option class="select-option" value="photos">фотографии</option>
+                    <option class="select-option" value="recipes">рецепты</option>
+                    <option class="select-option" value="friends">друзья</option>
+                </select>
+                <span></span>
+            </div>
+            <div class="narrow">
+                <div class="article" data-category="travel">
+                    <img src="img/berlin.jpg">
+                    <h2>Путешествие в Берлин в августе </h2>
+                    <p>Летний месяц я провела в столице Германии вместе с друзьями. И вот как это было!</p>
+                    <div class="tags">
+                        <span>Теги: путешествия</span>
+                        <span>29.09.2020</span>
+                    </div>
+                </div>
+                <div class="article" data-category="city">
+                    <img src="img/coldbrew.jpg">
+                    <h2>Где выпить колдбрю в Москве</h2>
+                    <p>Собрала для вас список любимых кофеен, где подают лучший летний напиток.</p>
+                    <div class="tags">
+                        <span>Теги: город</span>
+                        <span>24.07.2020</span>
+                    </div>
+                </div>
+                <div class="article" data-category="books">
+                    <img src="img/books.jpg">
+                    <h2>Прочитано: книжные рекомендации</h2>
+                    <p>Рассказываю о прочитанных за последнее время книгах: фавориты и провалы.</p>
+                    <div class="tags">
+                        <span>Теги: книги</span>
+                        <span>15.07.2020</span>
+                    </div>
+                </div>
+            </div>
+            <div class="wide">
+                <div class="article" data-category="photos">
+                    <h2>Снимки на плёнку</h2>
+                    <p>
+                        Поделилась с вами весенними фотографиями, и секретами удачных снимков.
+                    </p>
+                    <div class="tags-text">
+                        <span>Теги: фотографии</span>
+                        <span>15.07.2020</span>
+                    </div>
+                </div>
+                <div class="article" data-category="recipes">
+                    <h2>Домашний чизкейк </h2>
+                    <p>
+                        Что может быть лучше чизкейка с сезонными ягодами? Только домашний чизкейк!
+                    </p>
+                    <div class="tags">
+                        <span>Теги: рецепты</span>
+                        <span>24.06.2020</span>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="button">
+                Показать ещё
+            </button>  
+        </section>
+
+        <section class="aboutme">
+            <h2>Обо мне</h2>
+            <div>
+                <img src="img/me.jpg">
+                <aside>
+                    <p>Всем привет! Меня зовут Аня, и это мой личный блог.
+                        Здесь ты найдёшь рассказы о моих путешествиях, снимки
+                        на плёнку, рецепты, обзоры на книги. В общем, тексты о том,
+                        что мне инетресно.
+                    </p>
+                    <p>
+                        Я работаю копирайтером, поэтому мой блог — это ещё и моё
+                        портфолио. Ниже размещены несколько моих лучших
+                        рабочих текстов. Буду рада новым сотрудничествам!
+                    </p>
+                    <p>
+                        Если вы хотите написать мне — это можно сделать в соцсетях
+                        или через <a href="#form">форму</a>. Всегда приятно услышать обратную связь
+                        от читателей и познакомиться поближе.
+                    </p>
+                    <p>Приятного чтения!</p>
+                    <div class="quote">
+                        <p>
+                            Я верю, что каждый раз пробуя новое,
+                            выходящее за зону моего комфорта,
+                            я действительно узнаю настояющую
+                            себя. 
+                        </p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <section class="portfolio">
+            <h2>Портфолио</h2>
+            <div>
+                <div class="block">
+                    <h3>Блог HTML Academy</h3>
+                    <h4>«Как учиться продуктивно»</h4>
+                    <p>
+                        Про основные методы обучения,
+                        которые помогут быстро и надолго
+                        запомнить информацию.
+                    </p>
+                </div>
+                <div class="block">
+                    <h3>Журнал «LNK»</h3>
+                    <h4>«Зачем поцелуи нужны человеку? И какие они бывают»</h4>
+                    <p>
+                        Поцелуи — повсеместная ежедневная
+                        практика. Но зачем люди целуются?
+                        Какие смыслы вкладывают в этот ритуал?
+                        И где корни этой практики?
+                    </p>
+                </div>
+                <div class="block">
+                    <h3>Журнал «Т — Л»</h3>
+                    <h4>«Советы по эффективной удалённой работе»</h4>
+                    <p>
+                        Поделилась лайфхаками, которые помогают
+                        мне работать продуктивно из дома.
+                    </p>
+                </div>
+            </div>
+            <button type="button" class="button">
+                ПОКАЗАТЬ ЕЩЕ
+            </button> 
+        </section>
+
+        <section class="mailme">
+            <h2>Написать мне</h2>
+                <form class="form">
+                    <div class="form-name">
+                        <div class="form-item">
+                            <label for="name">Ваше имя</label>
+                            <input type="text" id="name"  name="name" placeholder="Иван Иванов" min="10" max="200">
+                        </div>
+                        <div class="form-item">
+                            <label for="email">Email</label>
+                            <input type="email" id="email"  name="email" placeholder="google@gmail.com" min="10" max="200"> 
+                        </div>
+                    </div>
+                    <div class="form-text">
+                        <label class="label" for="message">Сообщение</label>
+                        <textarea class="message" id="message" name="message" placeholder="Напишите здесь ваше сообщение."></textarea>
+                    </div>
+                    <button type="submit" class="button form-button">
+                        ОТПРАВИТЬ
+                    </button> 
+                </form>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="footer-menu">
+            <li><a>ВК</a></li>
+            <li><a>Телеграм</a></li>
+            <li><a>Инстаграм</a></li>
+            <li><a>Твиттер</a></li>
+        </nav>
+    </footer>
+
+    <script src="filter.js"></script>
+    <script src="comments.js"></script>
+</body>
+</html>
